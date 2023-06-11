@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Rock Paper Scissors</title>
+  </head>
+  <body>
+    <main>
+      <section class="center">
+        <div class="main-container">
+          <div class="left">
+            <div class="score-container">
+              <div
+                class="score"
+                style="background-image: linear-gradient(grey, black)"
+              >
+                <div class="user-score">
+                  <div class="user-score-text">Your score:</div>
+                  <div class="user-score-content">0</div>
+                </div>
+                <div class="enemy-score">
+                  <div class="enemy-score-text">Enemy score:</div>
+                  <div class="enemy-score-content">0</div>
+                </div>
+              </div>
+              <div class="enemy-move">
+                Enemy move:
+                <img
+                  src="images/nothing.png"
+                  alt="enemy move image"
+                  class="enemy-pick"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div id="figures">
+            <div class="figures-elements">
+              <div class="rock">
+                <img src="images/rock.png" alt="rock" />
+                <div class="text">Rock</div>
+              </div>
+              <div class="paper">
+                <img src="images/paper.png" alt="paper" />
+                <div class="text">Paper</div>
+              </div>
+              <div class="scissors">
+                <img src="images/scissors.png" alt="scissors" />
+                <div class="text">Scissors</div>
+              </div>
+            </div>
+
+            <div class="figures-text">Choose your pick</div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(
+    to right,
+    rgb(152, 56, 241),
+    rgb(238, 57, 184)
+  );
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Adjust the height if needed */
+}
+
+.main-container {
+  top: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* reset */
+/* .reset-score {
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  text-align: center;
+  position: absolute;
+  right: 135%;
+  top: 100%;
+  font-size: 3rem;
+  color: white;
+  font-weight: 800;
+  background-image: linear-gradient(
+    to right,
+    rgb(44, 117, 151),
+    rgb(52, 174, 190)
+  );
+  padding: 0 10px;
+  border-radius: 15px;
+  border: 1px solid black;
+  width: 200px;
+} */
+
+.left {
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.score-container {
+  width: 350px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.enemy-move {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  user-select: none;
+  font-weight: 800;
+  font-size: 1.5rem;
+  color: white;
+}
+
+#figures {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: auto;
+  flex-shrink: 1;
+  gap: 20px;
+}
+
+.figures-elements img {
+  cursor: pointer;
+  border: 1px solid;
+  border-radius: 15px;
+  margin: 10px 25px -5px 25px;
+  width: 125px;
+}
+
+#figures .text {
+  user-select: none;
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: white;
+}
+
+#figures .rock,
+#figures .paper,
+#figures .scissors {
+  transition: all 300ms ease-in-out;
+}
+
+#figures .rock:hover,
+#figures .paper:hover,
+#figures .scissors:hover {
+  transform: scale(1.05);
+
+  transition: all 300ms ease-in-out;
+}
+
+#figures .rock:active,
+#figures .paper:active,
+#figures .scissors:active {
+  transform: scale(1.1);
+
+  transition: all ease;
+}
+
+.figures-elements {
+  display: flex;
+  gap: 2rem;
+}
+.rock {
+  cursor: pointer;
+  user-select: none;
+  border: 1px solid;
+  border-radius: 15px;
+  background-image: linear-gradient(
+    to right,
+    rgb(44, 117, 151),
+    rgb(52, 174, 190)
+  );
+}
+
+.paper {
+  cursor: pointer;
+  user-select: none;
+  border: 1px solid;
+  border-radius: 15px;
+  background-image: linear-gradient(
+    to right,
+    rgb(44, 117, 151),
+    rgb(52, 174, 190)
+  );
+}
+
+.scissors {
+  cursor: pointer;
+  user-select: none;
+  border: 1px solid;
+  border-radius: 15px;
+  background-image: linear-gradient(
+    to right,
+    rgb(44, 117, 151),
+    rgb(52, 174, 190)
+  );
+}
+
+.figures-text {
+  user-select: none;
+  align-items: center;
+  top: 125%;
+  font-size: 3rem;
+  color: white;
+}
+
+/* score */
+.score {
+  display: flex;
+  flex-direction: column;
+  align-items: space-around;
+  justify-content: space-around;
+  border: 1px solid;
+  border-radius: 15px;
+  height: 100px;
+  width: 225px;
+}
+
+.user-score,
+.enemy-score {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-score-text,
+.enemy-score-text {
+  color: white;
+  margin-left: 1rem;
+  font-size: 1.5rem;
+}
+
+.user-score-content {
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+.enemy-score-content {
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+.enemy-pick {
+  min-width: 100px;
+}
